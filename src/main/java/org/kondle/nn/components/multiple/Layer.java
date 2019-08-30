@@ -22,7 +22,7 @@ public class Layer
 	public void loadArrayValues(double[] values) throws LayerException
 	{
 		if(values.length != this.neurons.length)
-			throw new LayerException("Count of values loading don't match with count of neurons");
+			throw new LayerException("Count of values loading don't match with count of neurons (neurons count: " + this.neurons.length + " - " + "values count: " + values.length + " )");
 		for (int i = 0; i < values.length; i++)
 			this.neurons[i].add(values[i]);
 	}

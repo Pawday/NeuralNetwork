@@ -37,4 +37,9 @@ public class Neuron
 		this.buffer = 0;
 		return returnedValue;
 	}
+
+	public double getBuffer()
+	{
+		return buffer;
+	}
 }

@@ -33,7 +33,7 @@ public class RelationsBox
 		return returned;
 	}
 
-	public Relation[] getFrontRelations(int neuronIndex) throws RelationsBoxException
+	public Relation[] getFrontLayerRelations(int neuronIndex) throws RelationsBoxException
 	{
 		if (neuronIndex > backLayer.getNeuronsCount())
 			throw new RelationsBoxException("In back layer there is not neuron with index " + neuronIndex);
@@ -44,5 +44,8 @@ public class RelationsBox
 			returned[i] = relations[neuronIndex][i];
 		return returned;
 	}
-
+	public Relation[][] getRelationsMultiArray()
+	{
+		return relations;
+	}
 }
