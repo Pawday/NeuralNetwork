@@ -8,14 +8,8 @@ public class NeuralNetwork
 	{
 
 	}
-
-	public int getAccuracyLimit()
+	public NeuralNetwork(int inputNeuronsCount, int[] hiddenLayersVectors, int outputNeuronsCount,int accuracyLimit)
 	{
-		return accuracyLimit;
-	}
 
-	public void setAccuracyLimit(int accuracyLimit)
-	{
-		this.accuracyLimit = accuracyLimit;
 	}
 }
